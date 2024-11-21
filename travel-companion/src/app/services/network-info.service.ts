@@ -25,6 +25,8 @@ export class NetworkInfoService {
       isOffline: isOffline
     };
 
+    console.log('Network Info:', networkInfo);
+
     return networkInfo;
   }
 }

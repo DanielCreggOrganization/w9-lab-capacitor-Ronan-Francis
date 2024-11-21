@@ -1,0 +1,14 @@
+<div>
+  <h2>Camera Image</h2>
+  <img *ngIf="cameraImage" [src]="cameraImage" alt="Camera Image">
+  <p *ngIf="!cameraImage">No image captured</p>
+
+  <h2>Location</h2>
+  <pre>{{ location | json }}</pre>
+
+  <h2>Device Info</h2>
+  <pre>{{ deviceInfo | json }}</pre>
+
+  <h2>Network Info</h2>
+  <pre>{{ networkInfo | json }}</pre>
+</div>

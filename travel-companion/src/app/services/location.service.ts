@@ -11,11 +11,13 @@ export class LocationService {
   async getCurrentPosition() {
     try {
       const coordinates = await Geolocation.getCurrentPosition();
-      return {
+      const locationInfo = {
         latitude: coordinates.coords.latitude,
         longitude: coordinates.coords.longitude,
         accuracy: coordinates.coords.accuracy
       };
+      console.log('Location Info:', locationInfo);
+      return locationInfo;
     } catch (error) {
       console.error('Error getting location', error);
       throw error;

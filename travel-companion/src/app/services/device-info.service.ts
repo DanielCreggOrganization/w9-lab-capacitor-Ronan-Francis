@@ -25,6 +25,8 @@ export class DeviceInfoService {
       languageCode: languageCode.value
     };
 
+    console.log('Device Info:', deviceInfo);
+
     return deviceInfo;
   }
 }
